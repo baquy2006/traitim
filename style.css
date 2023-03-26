@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Edu+NSW+ACT+Foundation&family=Raleway:ital,wght@1,100&display=swap');
+
+body{
+    background: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.heart{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    animation: dapdap  alternate 0.5s linear infinite;
+    filter:brightness(1.5)
+    
+}
+
+.heart1{
+    position: absolute;
+    top: 0;
+    left: 33%;
+    width:90%;
+    height: 80%;
+    background-color: rgb(255, 0, 64);
+    border-radius: 50%;
+    box-shadow: 0px 0px 80px rgb(255, 0, 81);
+}
+
+@keyframes  dapdap
+{
+    
+    0%{ transform: scale(0.8)}
+    30%{ transform: scale(0.9)}
+    10%{ transform: scale(0.8)}
+    40%{ transform: scale(0.8)}
+    60%{ transform: scale(1.2)}
+    100%{ transform: scale(1.5)}
+    
+}
+
+
+.heart2{
+    position: absolute;
+    top: 0;
+   left: -30%;
+    width:90%;
+    height: 80%;
+    background-color: rgb(255, 0, 64);
+    border-radius: 50%;
+    box-shadow: 0px 0px 80px rgb(255, 0, 81);
+}
+.heart3{
+    position: absolute;
+    top: 37%;
+    left: -2%;
+    width: 225px;
+    height: 200px;
+    background-color: rgb(255, 0, 64);
+    transform: rotate(45deg);
+    box-shadow: 0px 0px 80px rgb(255, 0, 81);
+}
+
+
+
+h2{
+    position:absolute;
+    font-size: 2cm;
+    top: 0%;
+    left: 80%;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Caveat', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    
+
+}
+h2 span{
+    animation: animate 5s linear infinite;
+
+}
+h2 span:nth-child(even){
+animation-delay: 0.4s;
+
+}
+
+@keyframes animate{
+    0%,18%,20.1%,30%,60.1%,80%,90.1%,92%
+    { 
+        color: #ffffff00;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #ffffff;
+        text-shadow: 0 0 10px #03bcf4,
+            0 0 2000px #00d0ff,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 160px #03bcf4,
+            0 0 400px #03bcf4
+
+
+    }
+}
+
+
+
+
+
